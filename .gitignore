@@ -1,0 +1,57 @@
+# 编译生成的文件
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# 目标文件
+*.o
+*.obj
+
+# 动态库和静态库
+*.so
+*.dylib
+*.a
+
+# 临时文件
+*.tmp
+*.temp
+
+# IDE 相关文件
+.vscode/
+.idea/
+*.vcxproj*
+*.sln
+*.swp
+*.swo
+
+# CMake 构建文件
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# 调试文件
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# 日志文件
+*.log
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 命名管道文件
+fifo
+*.fifo
