@@ -27,12 +27,12 @@
 *.swp
 *.swo
 
-# CMake 构建文件
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-*.cmake
+# # CMake 构建文件
+# CMakeCache.txt
+# CMakeFiles/
+# cmake_install.cmake
+# Makefile
+# *.cmake
 
 # 调试文件
 *.dSYM/
