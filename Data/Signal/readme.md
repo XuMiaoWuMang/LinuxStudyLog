@@ -75,6 +75,8 @@ Hello World!
 
 然而，并不是所有信号都能进行捕捉，然后执行自定义操作，比如SIGKILL信号，该信号不能被捕捉，也不能被忽略，只能执行默认操作，即终止进程。
 
+### 信号发送
+
 键盘一共可以产生四种信号，分别是：
 
 1. ctrl + c：SIGINT（2）
@@ -96,3 +98,17 @@ Hello World!
 kill -9 5414
 [1]+  Killed                  ./sig
 ```
+
+C++中，可以使用`kill()`函数来向进程发送信号，格式为`kill(pid, signum)`，其中pid为进程ID，signum为信号类型。例如`kill(5414, SIGINT)`，表示向进程ID为5414的进程发送SIGINT信号。
+
+头文件：`<sys/types.h>`和`<signal.h>`。
+
+还存在`raise(signum)`函数，该函数接受一个参数，表示要发送的信号类型，例如`raise(SIGINT)`，表示向当前进程发送SIGINT信号。
+
+> 如果是`raise(9)`，那么就可以说**它自杀了**。
+
+头文件：`<signal.h>`。
+
+还有一个函数，`abort(signum)`。会给调用进程发送一个信号，默认是`SIGABRT`也就是6号信号，该信号会导致进程异常终止，并产生core dump文件。
+
+头文件：`<signal.h>`。
