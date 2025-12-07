@@ -39,6 +39,7 @@
 *.su
 *.idb
 *.pdb
+.gdb_hisyory
 
 # 日志文件
 *.log
@@ -51,6 +52,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+core
 
 # 命名管道文件
 fifo
