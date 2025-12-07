@@ -39,7 +39,7 @@
 *.su
 *.idb
 *.pdb
-.gdb_hisyory
+.gdb_history
 
 # 日志文件
 *.log
