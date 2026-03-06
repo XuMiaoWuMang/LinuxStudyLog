@@ -94,8 +94,8 @@ Hello World!
 
 1. ctrl + c：SIGINT（2）
 2. ctrl + \：SIGQUIT（3）
-3. ctrl + z：SIGTSTP（20）
-4. ctrl + d：EOF（4）
+3. ctrl + d：EOF（4）
+4. ctrl + z：SIGTSTP（20）
 
 #### 指令
 
