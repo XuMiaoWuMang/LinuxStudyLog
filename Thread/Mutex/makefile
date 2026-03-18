@@ -1,6 +1,6 @@
-ThreadLibc: ThreadLibc.cc
+testMutex: testMutex.cc
 	g++ -o $@ $^ -lpthread -std=c++11
 
 .PHONY: clean
 clean:
-	rm -f ThreadLibc
+	rm -f testMutex
